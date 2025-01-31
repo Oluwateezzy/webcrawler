@@ -27,6 +27,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+CELERY_BROKER_URL = "redis://default:NqUtiVzD5t0VNdcVNJsZxm3NzD0NCEmA@redis-13306.c16.us-east-1-2.ec2.redns.redis-cloud.com:13306"
+CELERY_ACCEPT_CONTENT = ["json"]
+CELERY_TASK_SERIALIZER = "json"
+
 
 # Application definition
 
